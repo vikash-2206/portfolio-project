@@ -1,6 +1,7 @@
 @import 'config';
 @import 'menu';
 
+
 *{
 	box-sizing: borde-box;
 }
@@ -26,7 +27,7 @@
  	&.sm-heading{
  	margin-bottom : 2rem;
  	padding: 0.2rem 1rem;
- 	background : rgba(lighten($primary-color,0.2),0.5);
+ 	background : rgba(lighten($primary-color,2),0.5);
  	}
 
  }
@@ -46,7 +47,7 @@
  }
  main{
  padding : 4rem;
- height: 100%;
+ min-height: calc(100vh-60px);
  	
  	.icons {
  		margin-top :1rem;
@@ -56,7 +57,7 @@
 
  		&:hover{
  			color:  $secondary-color;
- 			@include easeOut();
+ 			
  		}
  		}
  	}
@@ -68,3 +69,6 @@
  		}
  	}
  }
+
+
+@import 'mobile';
